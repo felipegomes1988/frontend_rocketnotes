@@ -70,7 +70,7 @@ function AuthProvider({ children }){
     const user = localStorage.getItem("@rocketnotes:user");
 
     if(token && user){
-      api.defaults.headers.common['Authorizarion'] = `Bearer ${token}`;
+      api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
       setData({
         token,
